@@ -9,7 +9,7 @@ var LocalConfig = {
 	*/
 	//pbligatoire
 	database : {
-		address : "yourdbaddresshere"
+		address : "mongodb://user:pass@host:port/dbname"
 	},
 	addressBasePath : "http://localhost",
 	hmacEnabled : false

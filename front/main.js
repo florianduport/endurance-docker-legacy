@@ -17,8 +17,13 @@ var Main = {
     * start : lance l'application express
     */
     start : function(){
+    	var app = express();
 
-    	ConfigurationHelper.getConfig({application : 'front', done : function(configuration){
+    	app.listen(55055, function(){
+		    console.log('front started on ');      
+		});
+
+    	/*ConfigurationHelper.getConfig({application : 'front', done : function(configuration){
 
 			// Ne pas toucher ce bloc
 			var app = express();
@@ -48,7 +53,7 @@ var Main = {
 				});
 			}
 
-		}});
+		}});*/
 
 	}
 

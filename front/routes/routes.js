@@ -14,7 +14,21 @@ var Routes = {
 
 		//routes / mapping controller
 		
-		app.get('/', PageController.ping);
+        app.get('/', function(req, res, next){
+            console.log("ok");
+            next();
+
+        });
+        app.get('/', function(req, res, next){
+            console.log("ok0");
+            next();
+
+        });
+        app.get('/', function(req, res, next){
+            console.log("ok1");
+            next();
+
+        });
 
     }
 
