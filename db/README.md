@@ -1,2 +1,2 @@
 # TarsJS
-Project RESET !
+Docker container of the mongo database
