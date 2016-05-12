@@ -1,0 +1,48 @@
+version: '2'
+services:
+  front:
+    build: ./front
+    ports:
+      - "80:80"
+    volumes:
+      - "./front/src:/data/src"
+      - "./front/conf:/etc/nginx/conf.d"
+    command: ["nginx", "-g", "daemon off;"]
+    networks:
+        tars_net:
+          ipv4_address: 172.16.0.10
+          ipv6_address: 2001:3984:3989::10
+  api:
+    build: ./api
+    ports:
+      - "1337:1337"
+    volumes:
+      - "./api/src:/data/src"
+    command: "sails lift"
+    networks:
+        tars_net:
+          ipv4_address: 172.16.0.11
+          ipv6_address: 2001:3984:3969::10
+  db:
+    build: ./db
+    ports:
+      - "27017:27017"
+    volumes:
+      - "./db/data:/data/db"
+    networks:
+        tars_net:
+          ipv4_address: 172.16.0.12
+          ipv6_address: 2001:3984:3979::10
+
+networks:
+  tars_net:
+    driver: bridge
+    driver_opts:
+      com.docker.network.enable_ipv6: "true"
+    ipam:
+      driver: default
+      config:
+      - subnet: 172.16.0.0/24
+        gateway: 172.16.0.1
+      - subnet: 2001:3984:3989::/64
+        gateway: 2001:3984:3989::1
