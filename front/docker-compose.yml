@@ -1,0 +1,8 @@
+front:
+  build: ./
+  ports:
+    - "80:80"
+  volumes:
+    - "./src:/data/src"
+    - "./conf:/etc/nginx/conf.d"
+  command: ["nginx", "-g", "daemon off;"]
