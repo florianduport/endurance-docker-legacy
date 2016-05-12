@@ -1,2 +1,14 @@
 db/data/*
 db/data/
+*/*/node_modules/
+*/*/node_modules/*
+
+*/node_modules/
+*/node_modules/*
+node_modules/
+node_modules/*
+
+*/bower_components/
+*/bower_components/*
+bower_components/
+bower_components/*
