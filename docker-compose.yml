@@ -7,7 +7,7 @@ services:
     volumes:
       - "./front/src/:/data/src/"
       - "./front/conf:/etc/nginx/sites-available"
-    command: ["nginx", "-g", "daemon off;"]
+    command: bash -c "./start.sh"
     networks:
         tars_net:
           ipv4_address: 172.16.0.10
