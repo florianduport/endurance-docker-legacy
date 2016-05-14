@@ -5,8 +5,8 @@ services:
     ports:
       - "80:80"
     volumes:
-      - "./front/src:/data/src"
-      - "./front/conf:/etc/nginx/conf.d"
+      - "./front/src/:/data/src/"
+      - "./front/conf:/etc/nginx/sites-available"
     command: ["nginx", "-g", "daemon off;"]
     networks:
         tars_net:

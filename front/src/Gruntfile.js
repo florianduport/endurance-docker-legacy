@@ -22,13 +22,20 @@ module.exports = function(grunt) {
 
     copy: {
       main: {
-        files: [{
+        files: [ // bower components
+          {
+            expand: true,
+            cwd: 'app/',
+            src: ['**'],
+            dest: './dist/',
+            filter: 'isFile'
+          }, {
             expand: true,
             cwd: 'bower_components/',
             src: ['**'],
             dest: './dist/libs/',
             filter: 'isFile'
-          }, // bower components
+          }
         ]
       }
     },
