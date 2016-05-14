@@ -76,8 +76,8 @@ module.exports = function(grunt) {
 
     watch: {
       dev: {
-        files: ['Gruntfile.js', 'app/*.js', '*.html'],
-        tasks: ['html2js:dist', 'concat:dist', 'clean:temp'],
+        files: ['Gruntfile.js', 'app/*.js', 'app/*.html'],
+        tasks: ['copy', 'html2js:dist', 'concat:dist', 'clean:temp'],
         options: {
           atBegin: true
         }
