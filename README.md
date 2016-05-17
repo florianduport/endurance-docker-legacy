@@ -1,6 +1,6 @@
 # TARSjs
 
-![](http://img11.hostingpics.net/pics/732257APsSHwV.jpg)
+![](https://brainstomping.files.wordpress.com/2015/03/2001-monolith-interstellar-tars.jpg)
 
 TarsJS is a full stack framework to start working with MongoDB, Node.js, Sails and AngularJS easily. It is based on Docker containers and offers a quick way to start a project and organize your application. In TarsJS, each component is stored in a seperate docker container.
 
