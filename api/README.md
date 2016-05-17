@@ -1,4 +1,6 @@
 # TarsJS
 Docker container of the rest API
 
-npm install to install dependencies
+Refer to the sails documentation :
+
+http://sailsjs.org/documentation/concepts/
