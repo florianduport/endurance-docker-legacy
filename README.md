@@ -1,11 +1,12 @@
+![](http://img11.hostingpics.net/pics/732257APsSHwV.jpg)
+
 # TarsJS
-Project RESET !
 
 TarsJS is a full stack framework to start working with MongoDB, Node.js, Sails and AngularJS easily. It is based on Docker containers and offers a quick way to start a project and organize your application. In TarsJS, each component is stored in a seperate docker container.
 
 ## Prerequisite Tools
 
-Docker (1.11.1 or higher) 
+Docker (1.11.1 or higher)
 
 https://docs.docker.com/linux/
 
@@ -20,9 +21,9 @@ It's pretty easy : Git clone or fork this repo and open a terminal.
 
 Run : docker-compose up
 
-Go to : http://172.16.0.10/  It works ! 
+Go to : http://172.16.0.10/  It works !
 
-## How does it work ? 
+## How does it work ?
 
 ### Database
 
@@ -44,7 +45,7 @@ default ip address : 172.16.0.10
 
 ## How do I get to code in it ?
 
-Basically, there's two folders and seperate applications : 
+Basically, there's two folders and seperate applications :
 
 ### Sails Application
 
@@ -60,21 +61,17 @@ Grunt is configured to publish the application in the **/front/src/dist** folder
 
 The application uses Bower to manage dependencies. Bower components are stored in **/front/src/bower_components** and are automatically copied to **/front/src/dist/libs**.
 
-The Nginx root folder is configured to be the **/front/src/dist** folder. 
+The Nginx root folder is configured to be the **/front/src/dist** folder.
 
 ## Project Roadmap
 
-What's next ? 
+What's next ?
 
 - A better sample application showing the full stack chain with a mongo collection and a sails api consumed by the angular app.
 - Environment parameters to make it easier to go in production and manage environment variables
 - Unit tests integration with Mocha
 - Logging strategy to be defined
-- Automatic fixtures imports on MongoDB
-- npm install on api & front containers build
-- bower install on front container build
 
-## Any feedback ? 
+## Any feedback ?
 
 Please let me know :)
-
