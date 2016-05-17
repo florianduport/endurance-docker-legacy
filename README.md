@@ -14,7 +14,7 @@ Docker-compose version : 1.7.1 (version 2 yml files are used)
 
 https://docs.docker.com/compose/install/
 
-##  Installation
+## Installation
 
 It's pretty easy : Git clone or fork this repo and open a terminal.
 
@@ -22,7 +22,7 @@ Run : docker-compose up
 
 Go to : http://172.16.0.10/  It works ! 
 
-##  How does it work ? 
+## How does it work ? 
 
 ### Database
 
@@ -42,7 +42,7 @@ The front api is running an Nginx server exposing the AngularJS application and 
 
 default ip address : 172.16.0.10
 
-##  How do I get to code in it ?
+## How do I get to code in it ?
 
 Basically, there's two folders and seperate applications : 
 
@@ -62,7 +62,7 @@ The application uses Bower to manage dependencies. Bower components are stored i
 
 The Nginx root folder is configured to be the **/front/src/dist** folder. 
 
-##  Project Roadmap
+## Project Roadmap
 
 What's next ? 
 
@@ -70,6 +70,9 @@ What's next ?
 - Environment parameters to make it easier to go in production and manage environment variables
 - Unit tests integration with Mocha
 - Logging strategy to be defined
+- Automatic fixtures imports on MongoDB
+- npm install on api & front containers build
+- bower install on front container build
 
 ## Any feedback ? 
 
