@@ -11,3 +11,7 @@ RUN ["apt-get", "install", "-y", "nano"]
 RUN ["npm", "install", "-g", "grunt-cli"]
 
 WORKDIR /data/src
+
+RUN npm install
+RUN npm install -g bower
+RUN bower install
