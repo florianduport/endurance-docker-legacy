@@ -1,1 +1,0 @@
-nginx && grunt dev
