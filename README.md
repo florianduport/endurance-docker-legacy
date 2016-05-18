@@ -67,6 +67,7 @@ The Nginx root folder is configured to be the **/front/src/dist** folder.
 
 What's next ?
 
+- Tars will soon became a global npm module that will be used to install new projects (following this current architecture). It will also include a CLI with multiple tasks.
 - A better sample application showing the full stack chain with a mongo collection and a sails api consumed by the angular app.
 - Environment parameters to make it easier to go in production and manage environment variables
 - Unit tests integration with Mocha
