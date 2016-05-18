@@ -1,0 +1,36 @@
+{
+  "name": "tarsjs-cli",
+  "version": "1.0.0",
+  "description": "A CLI for tarsjs projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "tarsjs": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/florianduport/tarsjs-cli.git"
+  },
+  "keywords": [
+    "tarsjs",
+    "docker",
+    "sails",
+    "angular",
+    "mongodb",
+    "nodejs"
+  ],
+  "author": "florianduport",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/florianduport/tarsjs-cli/issues"
+  },
+  "homepage": "https://github.com/florianduport/tarsjs-cli#readme",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "fs-extra": "^0.30.0",
+    "replace": "^0.3.0",
+    "tarsjs-template": "^1.0.3"
+  }
+}
