@@ -17,13 +17,17 @@ https://docs.docker.com/compose/install/
 
 ## Installation
 
-It's pretty easy : Git clone or fork this repo and open a terminal.
+It's pretty easy :
 
-Run : docker-compose up
+Run : npm install -g endurance
 
-Go to : http://172.16.0.10/  It works !
+Then to create a new project : 
 
-## How does it work ?
+Run : endurance new
+
+Go to : http://172.16.0.10/ (or ip template selected)  It works !
+
+## What's the magic ?
 
 ### Database
 
@@ -67,7 +71,6 @@ The Nginx root folder is configured to be the **/front/src/dist** folder.
 
 What's next ?
 
-- Endurance will soon became a global npm module that will be used to install new projects (following this current architecture). It will also include a CLI with multiple tasks.
 - A better sample application showing the full stack chain with a mongo collection and a sails api consumed by the angular app.
 - Environment parameters to make it easier to go in production and manage environment variables
 - Unit tests integration with Mocha
@@ -75,4 +78,4 @@ What's next ?
 
 ## Any feedback ?
 
-Please let me know :) Honesty level 90%.
+Please let me know :) This is no time for caution.
