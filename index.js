@@ -84,4 +84,4 @@ class TarsjsCLI {
     console.log('not implemented yet, please use docker-compose up instead.')
   }
 }
-new TarsjsCLI().getCommand();
+module.exports = new TarsjsCLI();
