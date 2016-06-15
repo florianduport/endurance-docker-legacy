@@ -25,7 +25,11 @@ Then to create a new project :
 
 Run : endurance new
 
-Go to : http://172.16.0.10/ (or ip template selected)  It works !
+Choose a project name.
+
+Choose an IP Template. This is used to create the Docker network (e.g : 172.0.0).
+
+Go to : http://{ipTemplate}.10/ (or ip template selected)  It works !
 
 ## What's the magic ?
 
@@ -33,19 +37,19 @@ Go to : http://172.16.0.10/ (or ip template selected)  It works !
 
 The database is built from the mongodb docker image. It uses a docker volume stored in db/data. This folder is ignored by git so these data aren't messing up the repo.
 
-default ip address : 172.16.0.12
+default ip address : {ipTemplate}.12
 
 ### Api
 
 The api is built from the node docker image. It exposes a sails server. This server is not directly accessed by clients. It is only aimed to be requested by the angular application to manipulate database data.
 
-default ip address : 172.16.0.11
+default ip address : {ipTemplate}.11
 
 ### Front
 
 The front api is running an Nginx server exposing the AngularJS application and serving static files. It is also the only entry point for the clients. It redirects automaticly all /api/ requests to the Api server. This behavior has been made in order to create a cache strategy over the api nodejs server.
 
-default ip address : 172.16.0.10
+default ip address : {ipTemplate}.10
 
 ## How do I get to code in it ?
 
